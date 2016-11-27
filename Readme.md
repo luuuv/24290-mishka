@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Елена Егорова](https://up.htmlacademy.ru/adaptive/9/user/24290).
-* Наставник: `Неизвестно`.
+* Наставник: Лиза Позднякова.
 
 ---
 
