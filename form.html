@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Мишка</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="page-header__logo">
+        <img src="http://placehold.it/86x35" width="86" height="35" alt="Мишка лого" title="Мишка лого">
+      </div>
+      <nav class="main-nav main-nav--closed">
+        <div class="main-nav__burger-menu"></div>
+        <div class="main-nav__inner">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a href="#" title="Каталог товаров">Каталог товаров</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" title="Вязание на заказ">Вязание на заказ</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" title="Поиск по сайту">Поиск по сайту</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" title="Корзина">Корзина: пока пуста</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main-inner">
+      <section class="form">
+        <h1>Вязание на заказ</h1>
+        <div class="form__epilog">
+          <p>Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+        </div>
+        <form method="post">
+          <fieldset>
+            <legend>Тип</legend>
+            <input type="radio" name="type" id="accessories" checked><label for="accessories">Аксессуар для интерьера</label>
+            <input type="radio" name="type" id="child-toy"><label for="child-toy">Детская игрушка</label>
+          </fieldset>
+          <fieldset>
+            <legend>Цвет</legend>
+            <input type="checkbox" name="color" id="white" checked><label>Белый</label>
+            <input type="checkbox" name="color" id="grey" checked><label>Серый</label>
+            <input type="checkbox" name="color" id="tiffany"><label>«Тиффани»</label>
+            <input type="checkbox" name="color" id="black"><label>Черный</label>
+            <input type="checkbox" name="color" id="pink"><label>Розовый</label>
+            <input type="checkbox" name="color" id="orange"><label>Оранжевый</label>
+          </fieldset>
+          <fieldset>
+            <legend>ФИО</legend>
+            <label for="first-name-field">Имя:</label>
+            <input type="text" id="first-name-field" name="fio" placeholder="Введите ваше имя*" required>
+            <label for="second-name-field">Фамилия:</label>
+            <input type="text" id="second-name-field" name="fio" placeholder="Укажите фамилию*" required>
+            <label for="father-name-field">Отчество:</label>
+            <input type="text" id="father-name-field" name="fio" placeholder="Отчество, если желаете">
+          </fieldset>
+          <fieldset>
+            <legend>Тел</legend>
+            <input type="text" name="phone" placeholder="+7 XXX XX XX" required>
+          </fieldset>
+          <fieldset>
+            <legend>e-mail</legend>
+            <input type="text" name="mail" placeholder="Ваш Email*" required>
+          </fieldset>
+          <fieldset>
+            <legend>Доп</legend>
+            <textarea name="additional">Опишите все ваши пожелания к заказу</textarea>
+          </fieldset>
+          <span>*Поля обязательны для заполнения</span>
+          <input type="submit" class="btn" value="Отправить заказ">
+        </form>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <div class="contacts__social">
+        <ul>
+          <li class="igm-social"><a href="#" title="Инстаграм"></a></li>
+          <li class="fb-social"><a href="#" title="Фейсбук"></a></li>
+          <li class="tw-social"><a href="#" title="Твиттер"></a></li>
+        </ul>
+      </div>
+      <div class="contacts__dev">
+        <a href="#" title="">Разработано</a>
+      </div>
+    </footer>
+  </body>
+</html>
