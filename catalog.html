@@ -10,61 +10,72 @@
         <img src="http://placehold.it/86x35" width="86" height="35" alt="Мишка лого" title="Мишка лого">
       </div>
       <nav class="main-nav main-nav--closed">
-        <div class="main-nav__burger-menu"></div>
-        <div class="main-nav__inner">
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a href="#" title="Каталог товаров">Каталог товаров</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="#" title="Вязание на заказ">Вязание на заказ</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="#" title="Поиск по сайту">Поиск по сайту</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="#" title="Корзина">Корзина: пока пуста</a>
-            </li>
-          </ul>
-        </div>
+        <button class="main-nav__burger-menu main-nav__burger-menu--burger-tap"></button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a href="#" title="Каталог товаров">Каталог товаров</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" title="Вязание на заказ">Вязание на заказ</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" title="Поиск по сайту">Поиск по сайту</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" title="Корзина">Корзина: пока пуста</a>
+          </li>
+        </ul>
       </nav>
     </header>
 
     <main class="main-inner">
       <section class="catalog">
         <h1>Каталог товаров</h1>
-        <ul class="catalog__list">
-          <li class="catalog__item">
-            <a href="#" title="">
-              <img src="http://placehold.it/260x195" title="Зайчик-попрыгайчик" alt="Зайчик-попрыгайчик">
-              <div class="catalog__product-info">
-                <span class="catalog__product-title">Зайчик-попрыгайчик</span>
-                <span class="catalog__product-text">Рост 30 см, вес 200 г</span>
-              </div>
-              <div class="catalog__price">1 200 руб.</div>
+        <div class="catalog__item">
+          <a href="#" title="Зайчик-попрыгайчик">
+            <img src="http://placehold.it/260x195" title="Зайчик-попрыгайчик" alt="Зайчик-попрыгайчик">
+          </a>
+          <div class="catalog__product-info">
+            <a href="#" title="Зайчик-попрыгайчик">
+              <p class="catalog__product-title">Зайчик-попрыгайчик</p>
             </a>
-          </li>
-          <li class="catalog__item">
-            <a href="#" title="">
-              <img src="http://placehold.it/260x195" title="Корзинка для белья" alt="Корзинка для белья">
-              <div class="catalog__product-info">
-                <span class="catalog__product-title">Корзинка для белья</span>
-                <span class="catalog__product-text">Диаметр 15 см, высота 10 см</span>
-              </div>
-              <div class="catalog__price">690 руб.</div>
+            <p class="catalog__product-text">Рост 30 см, вес 200 г</p>
+          </div>
+          <div class="catalog__price">1 200 руб.</div>
+          <a href="#" title="Зайчик-попрыгайчик">
+            <div class="catalog__bucket"></div>
+          </a>
+        </div>
+        <div class="catalog__item">
+          <a href="#" title="Корзинка для белья">
+            <img src="http://placehold.it/260x195" title="Корзинка для белья" alt="Корзинка для белья">
+          </a>
+          <div class="catalog__product-info">
+            <a href="#" title="Корзинка для белья">
+              <p class="catalog__product-title">Корзинка для белья</p>
             </a>
-          </li>
-          <li class="catalog__item">
-            <a href="#" title="">
-              <img src="http://placehold.it/260x195" title="Большая корзинка для игрушек" alt="Большая корзинка для игрушек">
-              <div class="catalog__product-info">
-                <span class="catalog__product-title">Большая корзинка для игрушек</span>
-                <span class="catalog__product-text">Диаметр 30 см, высота 30 см</span>
-              </div>
-              <div class="catalog__price">1 500 руб.</div>
+            <p class="catalog__product-text">Диаметр 15 см, высота 10 см</p>
+          </div>
+          <div class="catalog__price">690 руб.</div>
+          <a href="#" title="Корзинка для белья">
+            <div class="catalog__bucket"></div>
+          </a>
+        </div>
+        <div class="catalog__item">
+          <a href="#" title="Большая корзинка для игрушек">
+            <img src="http://placehold.it/260x195" title="Большая корзинка для игрушек" alt="Большая корзинка для игрушек">
+          </a>
+          <div class="catalog__product-info">
+            <a href="#" title="Большая корзинка для игрушек">
+              <p class="catalog__product-title">Большая корзинка для игрушек</p>
             </a>
-          </li>
-        </ul>
+            <p class="catalog__product-text">Диаметр 30 см, высота 30 см</p>
+          </div>
+          <div class="catalog__price">1 500 руб.</div>
+          <a href="#" title="Большая корзинка для игрушек">
+            <div class="catalog__bucket"></div>
+          </a>
+        </div>
       </section>
       <section class="process">
         <h2>Процесс производства</h2>
@@ -81,13 +92,11 @@
     </main>
 
     <footer class="page-footer">
-      <div class="contacts__social">
-        <ul>
-          <li class="igm-social"><a href="#" title="Инстаграм"></a></li>
-          <li class="fb-social"><a href="#" title="Фейсбук"></a></li>
-          <li class="tw-social"><a href="#" title="Твиттер"></a></li>
-        </ul>
-      </div>
+      <ul class="contacts__social">
+        <li class="contacts__social-block contacts__social-block--igm"><a href="#" title="Инстаграм"></a></li>
+        <li class="contacts__social-block contacts__social-block--fb"><a href="#" title="Фейсбук"></a></li>
+        <li class="contacts__social-block contacts__social-block--tw"><a href="#" title="Твиттер"></a></li>
+      </ul>
       <div class="contacts__dev">
         <a href="#" title="">Разработано</a>
       </div>

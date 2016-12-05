@@ -10,23 +10,21 @@
         <img src="http://placehold.it/86x35" width="86" height="35" alt="Мишка лого" title="Мишка лого">
       </div>
       <nav class="main-nav main-nav--closed">
-        <div class="main-nav__burger-menu"></div>
-        <div class="main-nav__inner">
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a href="#" title="Каталог товаров">Каталог товаров</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="#" title="Вязание на заказ">Вязание на заказ</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="#" title="Поиск по сайту">Поиск по сайту</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="#" title="Корзина">Корзина: пока пуста</a>
-            </li>
-          </ul>
-        </div>
+        <button class="main-nav__burger-menu main-nav__burger-menu--burger-tap"></button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a href="#" title="Каталог товаров">Каталог товаров</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" title="Вязание на заказ">Вязание на заказ</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" title="Поиск по сайту">Поиск по сайту</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" title="Корзина">Корзина: пока пуста</a>
+          </li>
+        </ul>
       </nav>
     </header>
 
@@ -49,22 +47,14 @@
         <b class="week-product__subtitle">Товар недели</b>
         <div class="weekend-product__info">
           <p>Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
-          <table class="weekend-product__table">
-            <tbody>
-              <tr>
-                <td>Цвет:</td>
-                <td>«Тиффани»/серый</td>
-              </tr>
-              <tr>
-                <td>Диаметр:</td>
-                <td>25 см</td>
-              </tr>
-              <tr>
-                <td>Высота:</td>
-                <td>15 см</td>
-              </tr>
-            </tbody>
-          </table>
+          <ul class="weekend-product__desc">
+            <li class="weekend-product__desc-item">Цвет</li>
+            <li class="weekend-product__desc-item">«Тиффани»/серый</li>
+            <li class="weekend-product__desc-item">Диаметр:</li>
+            <li class="weekend-product__desc-item">25 см</li>
+            <li class="weekend-product__desc-item">Высота:</li>
+            <li class="weekend-product__desc-item">15 см</li>
+          </ul>
           <img src="http://placehold.it/260x315" title="Товар недели" alt="Товар недели">
           <span class="weekend-product__price">Цена: 990 руб.</span>
           <a href="#" class="btn" title="Заказать">Заказать</a>
@@ -84,32 +74,24 @@
       <section class="feedback">
         <h2>Отзывы</h2>
         <div class="feedback__item">
-          <div class="feedback__text">
-            <p>Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-          </div>
+          <p>Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
           <span class="feedback__author-fio">Анастасия Красильникова</span>
           <span class="feedback__autor-login">@misssssiskras</span>
-          <div class="feedback__navigation">
-            <button class="btn btn__prev"></button>
-            <button class="btn btn__next"></button>
-          </div>
-          <a href="#" class="btn" title="Написать">Написать</a>
         </div>
+        <div class="feedback__navigation">
+          <button class="feedback__btn feedback__btn--prev"></button>
+          <button class="feedback__btn feedback__btn--next"></button>
+        </div>
+          <a href="#" class="btn" title="Написать">Написать</a>
       </section>
       <section class="contacts">
         <h2>Контакты</h2>
-        <table class="contacts__table">
-          <tbody>
-            <tr>
-              <td>e-mail:</td>
-              <td>адрес:</td>
-            </tr>
-            <tr>
-              <td>адрес:</td>
-              <td>г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</td>
-            </tr>
-          </tbody>
-        </table>
+        <ul class="contacts__desc">
+          <li class="contacts__desc-item">e-mail:</li>
+          <li class="contacts__desc-item">адрес:</li>
+          <li class="contacts__desc-item">адрес:</li>
+          <li class="contacts__desc-item">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</li>
+        </ul>
         <div class="contacts__map">
           <img src="http://placehold.it/320x457" title="" alt="">
         </div>
@@ -118,13 +100,11 @@
     </main>
 
     <footer class="page-footer">
-      <div class="contacts__social">
-        <ul>
-          <li class="igm-social"><a href="#" title="Инстаграм"></a></li>
-          <li class="fb-social"><a href="#" title="Фейсбук"></a></li>
-          <li class="tw-social"><a href="#" title="Твиттер"></a></li>
-        </ul>
-      </div>
+      <ul class="contacts__social">
+        <li class="contacts__social-block contacts__social-block--igm"><a href="#" title="Инстаграм"></a></li>
+        <li class="contacts__social-block contacts__social-block--fb"><a href="#" title="Фейсбук"></a></li>
+        <li class="contacts__social-block contacts__social-block--tw"><a href="#" title="Твиттер"></a></li>
+      </ul>
       <div class="contacts__dev">
         <a href="#" title="">Разработано</a>
       </div>
