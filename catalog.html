@@ -3,11 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка - каталог</title>
+    <link rel="stylesheet" href="/css/style.css"
   </head>
   <body>
     <header class="page-header">
       <div class="page-header__logo">
-        <img src="http://placehold.it/86x35" width="86" height="35" alt="Мишка лого" title="Мишка лого">
+        <a href="/" title="Мишка - главная страница">
+          <img src="img/logo-mobile.svg" width="86" height="35" alt="Мишка лого" title="Мишка лого">
+        </a>
       </div>
       <nav class="main-nav main-nav--closed">
         <button class="main-nav__burger-menu main-nav__burger-menu--burger-tap"></button>
@@ -16,7 +19,7 @@
             <a href="#" title="Каталог товаров">Каталог товаров</a>
           </li>
           <li class="main-nav__item">
-            <a href="#" title="Вязание на заказ">Вязание на заказ</a>
+            <a href="form.html" title="Вязание на заказ">Вязание на заказ</a>
           </li>
           <li class="main-nav__item">
             <a href="#" title="Поиск по сайту">Поиск по сайту</a>
@@ -33,7 +36,7 @@
         <h1>Каталог товаров</h1>
         <div class="catalog__item">
           <a href="#" title="Зайчик-попрыгайчик">
-            <img src="http://placehold.it/260x195" title="Зайчик-попрыгайчик" alt="Зайчик-попрыгайчик">
+            <img src="img/photo-1-mobile@1x.jpg" title="Зайчик-попрыгайчик" alt="Зайчик-попрыгайчик">
           </a>
           <div class="catalog__product-info">
             <a href="#" title="Зайчик-попрыгайчик">Зайчик-попрыгайчик</a>
@@ -44,7 +47,7 @@
         </div>
         <div class="catalog__item">
           <a href="#" title="Корзинка для белья">
-            <img src="http://placehold.it/260x195" title="Корзинка для белья" alt="Корзинка для белья">
+            <img src="img/photo-2-mobile@1x.jpg" title="Корзинка для белья" alt="Корзинка для белья">
           </a>
           <div class="catalog__product-info">
             <a href="#" title="Корзинка для белья">Корзинка для белья</a>
@@ -55,7 +58,7 @@
         </div>
         <div class="catalog__item">
           <a href="#" title="Большая корзинка для игрушек">
-            <img src="http://placehold.it/260x195" title="Большая корзинка для игрушек" alt="Большая корзинка для игрушек">
+            <img src="img/photo-3-mobile@1x.jpg" title="Большая корзинка для игрушек" alt="Большая корзинка для игрушек">
           </a>
           <div class="catalog__product-info">
             <a href="#" title="Большая корзинка для игрушек">Большая корзинка для игрушек</a>
@@ -68,7 +71,7 @@
       <section class="process">
         <h2>Процесс производства</h2>
         <div class="process__video">
-          <img src="http://placehold.it/260x150" alt="Заглушка для видео" title="Заглушка для видео">
+          <img src="img/video-mobile@1x.jpg" alt="Заглушка для видео" title="Заглушка для видео">
           <button class="video-btn"></button>
         </div>
         <p>По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
@@ -78,12 +81,12 @@
     </main>
 
     <footer class="page-footer">
-      <ul class="contacts__social">
-        <li class="contacts__social-block contacts__social-block--igm"><a href="#" title="Инстаграм"></a></li>
-        <li class="contacts__social-block contacts__social-block--fb"><a href="#" title="Фейсбук"></a></li>
-        <li class="contacts__social-block contacts__social-block--tw"><a href="#" title="Твиттер"></a></li>
+      <ul class="page-footer__social">
+        <li class="page-footer__social-block page-footer__social-block--igm"><a href="#" title="Инстаграм"></a></li>
+        <li class="page-footer__social-block page-footer__social-block--fb"><a href="#" title="Фейсбук"></a></li>
+        <li class="page-footer__social-block page-footer__social-block--tw"><a href="#" title="Твиттер"></a></li>
       </ul>
-      <div class="contacts__dev">
+      <div class="page-footer__dev">
         <a href="#" title="">Разработано</a>
       </div>
     </footer>
