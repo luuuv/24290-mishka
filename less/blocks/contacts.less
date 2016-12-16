@@ -1,3 +1,34 @@
 .contacts {
-  outline: pink solid 1px;
+  outline: 1px solid blue;
+}
+
+.contacts {
+  h2 {
+    font-family: OpenSans Bold;
+    color: #00000;
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+.contacts__desc {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.contacts__desc-item {
+  div {
+    font-family: OpenSans;
+    color: @font-color-dark;
+    font-size: 15px;
+    line-height: 30px;
+
+    a {
+      display: inline-block;
+      text-decoration: none;
+      color: @font-color-dark;
+      border-bottom: 1px solid #62d1ba;
+    }
+  }
 }
