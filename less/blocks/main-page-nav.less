@@ -1,5 +1,10 @@
 .main-page-nav {
-  outline: 1px solid pink;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+
+  font-family: OpenSans, Arial, sans-serif;
+  font-weight: bold;
 }
 
 .main-page-nav__list {
@@ -14,12 +19,13 @@
 
     font-size: 19px;
     line-height: 24px;
-    font-family: OpenSans Bold;
     color: @font-color-light;
     text-decoration: none;
 
-    padding-top: 30px;
     padding-bottom: 30px;
+    padding-top: 25px;
+    padding-left: 29px;
+    padding-right: 160px;
   }
 }
 
@@ -29,4 +35,19 @@
 
 .main-page-nav__item:nth-child(2) {
   background-color: #56c3b2;
+}
+
+@media @tablet-widths {
+  .main-page-nav {
+    min-height: 117px;
+    width: 668px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
+
+@media @desktop-widths {
+  .main-page-nav {
+    width: 1050px;
+  }
 }

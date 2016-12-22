@@ -1,13 +1,17 @@
 .contacts {
   outline: 1px solid blue;
+  min-height: 895px;
 }
 
 .contacts {
+  font-family: @font-family-common;
+  line-height: 30px;
+  color: @font-color-dark;
+
   h2 {
-    font-family: OpenSans Bold;
+    font-weight: bold;
     color: #00000;
     font-size: 18px;
-    line-height: 30px;
   }
 }
 
@@ -19,16 +23,24 @@
 
 .contacts__desc-item {
   div {
-    font-family: OpenSans;
-    color: @font-color-dark;
     font-size: 15px;
-    line-height: 30px;
 
     a {
       display: inline-block;
       text-decoration: none;
-      color: @font-color-dark;
       border-bottom: 1px solid #62d1ba;
     }
+  }
+}
+
+@media @tablet-widths {
+  .contacts {
+    min-height: 927px;
+  }
+}
+
+@media @desktop-widths {
+  .contacts {
+    min-height: 633px;
   }
 }

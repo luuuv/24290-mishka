@@ -1,32 +1,113 @@
 .main-nav {
-  outline: 1px solid pink;
-}
-
-.main-nav {
-  background-color: @bg-white;
+  position: absolute;
 }
 
 .main-nav__list {
+  width: 320px;
+
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+.main-nav__user-list {
+  width: 320px;
+  min-height: 158px;
+
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.main-nav__sub-list {
+  display: none;
 }
 
 .main-nav__item {
   a {
     display: block;
 
+    font-family: OpenSans;
+    font-weight: bold;
     text-decoration: none;
     font-size: 17px;
     line-height: 24px;
-    font-family: OpenSans Bold;
     color: @font-color-common;
 
     padding-top: 27px;
     padding-bottom: 27px;
+    padding-left: 75px;
+    border-bottom: 1px solid #ececec;
   }
 }
 
 .main-nav--closed {
   display: none;
+}
+
+@media @tablet-widths {
+  .main-nav {
+    .clearfix();
+    position: relative;
+    min-height: 0;
+  }
+
+  .main-nav__list {
+    min-height: 40px;
+    width: 384px;
+
+    position: absolute;
+    top: 88px;
+  }
+
+  .main-nav__user-list {
+    outline: 1px solid red;
+
+    min-height: 88px;
+    width: 398px;
+
+    float: right;
+  }
+
+  .main-nav--closed {
+    display: block;
+  }
+}
+
+@media @desktop-widths {
+  .main-nav {
+    .clearfix();
+  }
+
+  .main-nav__list {
+    outline: 1px solid red;
+
+    min-height: 88px;
+    width: 468px;
+
+    top: 0;
+  }
+
+  .main-nav__user-list {
+    outline: 1px solid red;
+
+    min-height: 88px;
+    width: 400px;
+
+    float: right;
+  }
+
+  .main-nav__sub-list {
+    display: block;
+    outline: 1px solid pink;
+    min-height: 40px;
+    width: 450px;
+
+    position: absolute;
+    top: 88px;
+
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
 }

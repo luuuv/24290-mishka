@@ -1,13 +1,14 @@
 .about-us {
   outline: 1px solid pink;
-  }
+  min-height: 826px;
 
-.about-us {
+  font-family: @font-family-common;
+  color: #00000;
+  line-height: 30px;
+
   h2 {
-    font-family: OpenSans Bold;
-    color: #00000;
+    font-weight: bold;
     font-size: 25px;
-    line-height: 30px;
   }
 }
 
@@ -18,7 +19,17 @@
 }
 
 .about-us__item {
-  font-family: OpenSans Bold;
   font-size: 17px;
-  color: #00000;
+}
+
+@media @tablet-widths {
+  .about-us {
+    min-height: 640px;
+  }
+}
+
+@media @desktop-widths {
+  .about-us {
+    min-height: 664px;
+  }
 }

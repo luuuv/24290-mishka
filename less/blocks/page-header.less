@@ -1,3 +1,62 @@
-.page-header {
-  outline: 1px solid pink;
+.page-header__container {
+  width: 320px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-header__logo {
+  min-height: 79px;
+  border-bottom: 1px solid #ececec;
+
+  img {
+    padding-left: 116px;
+    padding-top: 22px;
+  }
+}
+
+@media @tablet-widths {
+  .page-header {
+  }
+
+  .page-header__container {
+    width: 768px;
+    min-height: 88px;
+  }
+
+  .page-header__logo {
+    outline: 1px solid yellow;
+    min-height: 88px;
+    width: 161px;
+
+    float: left;
+  }
+
+  .page-header__free-delivery {
+    outline: 1px solid pink;
+    min-height: 40px;
+    width: 279px;
+
+    float: right;
+  }
+}
+
+@media @desktop-widths {
+  .page-header__container {
+    min-height: 88px;
+    width: 1150px;
+
+    position: relative;
+  }
+
+  .page-header__logo {
+    outline: 1px solid yellow;
+
+    min-height: 88px;
+    width: 149px;
+
+    position: absolute;
+    top: 0;
+    left: 500px;
+  }
 }

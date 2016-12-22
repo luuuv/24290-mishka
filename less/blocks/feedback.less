@@ -1,11 +1,14 @@
 .feedback {
   outline: 1px solid red;
+  min-height: 657px;
 }
 
 .feedback {
+  font-family: @font-family-common;
+  color: #00000;
+
   h2 {
-    font-family: OpenSans Bold;
-    color: #00000;
+    font-weight: bold;
     font-size: 25px;
     line-height: 30px;
   }
@@ -13,7 +16,6 @@
 
 .feedback__item {
   p {
-    font-family: OpenSans;
     color: @font-color-dark;
     font-size: 15px;
     line-height: 30px;
@@ -21,8 +23,7 @@
 }
 
 .feedback__author-fio {
-  font-family: OpenSans Bold;
-  color: #00000;
+  font-weight: bold;
   font-size: 18px;
   line-height: 24px;
 }
@@ -33,4 +34,16 @@
   font-size: 18px;
   line-height: 30px;
   text-decoration: none;
+}
+
+@media @tablet-widths {
+  .feedback {
+    min-height: 542px;
+  }
+}
+
+@media @desktop-widths {
+  .feedback {
+    min-height: 547px;
+  }
 }
